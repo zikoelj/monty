@@ -26,17 +26,17 @@ void exec(void)
 		{"stack", _mode},
 		{NULL, NULL},
 	};
-	int j = 0;
+	int i = 0;
 
-	for (j = 0; ins[j].opcode; j++)
+	for (i = 0; ins[i].opcode; i++)
 	{
-		if (strcmp(ptr.opcode, ins[j].opcode) == 0)
+		if (strcmp(ptr.opcode, ins[i].opcode) == 0)
 		{
-			ins[j].f(&ptr.top, ptr.line_num);
+			ins[i].f(&ptr.top, ptr.line_num);
 			break;
 		}
 	}
-	if (!ins[j].opcode)
+	if (!ins[i].opcode)
 	{
 		fprintf(stderr, "L%d: unknown instruction %s\n",
 				ptr.line_num, ptr.opcode);

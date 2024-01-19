@@ -3,7 +3,6 @@
  * _mode -  a switch function
  * @top: head of double list
  * @line_number: line number of opcode
- * 
  */
 void _mode(stack_t **top, unsigned int line_number)
 {
@@ -20,7 +19,6 @@ void _mode(stack_t **top, unsigned int line_number)
  * _push -  a function that adds a new node at the top
  * @top: head of double list
  * @line_number: line number of opcode
- * 
  */
 void _push(stack_t **top, unsigned int line_number)
 {
